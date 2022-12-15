@@ -20,9 +20,7 @@ def tri_selction(Tab) :
             Tab[i] = Tab[mini]
             Tab[mini] = temp
             a +=3
-    print(c, a)
-    print(Tab)
-    return Tab
+    return c+a
 
 tri_selction(Tab)
 
