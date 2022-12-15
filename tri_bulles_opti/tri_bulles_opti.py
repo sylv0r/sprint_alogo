@@ -1,19 +1,18 @@
-tableau = [12, 3, 45, 67, 87, 65, 57, 8, 90, 9876, 43, 2]
-
-
-def tri_bulle(tableau):
+def tri_bulle(tab):
     permutation = True
+    comparaisons = 0
+    echanges_affections = 0
     passage = 0
     while permutation:
         permutation = False
-        passage = passage + 1
-        for en_cours in range(0, len(tableau) - passage):
-            if tableau[en_cours] > tableau[en_cours + 1]:
+        passage += 1
+        for en_cours in range(0, len(tab) - passage):
+            comparaisons += 1
+            if tab[en_cours] > tab[en_cours + 1]:
+                echanges_affections += 1
                 permutation = True
                 # On echange les deux elements
-                tableau[en_cours], tableau[en_cours + 1] = \
-                    tableau[en_cours + 1], tableau[en_cours]
-    return tableau
+                tab[en_cours], tab[en_cours + 1] = \
+                    tab[en_cours + 1], tab[en_cours]
+    return comparaisons+echanges_affections
 
-
-print(tri_bulle(tableau))
