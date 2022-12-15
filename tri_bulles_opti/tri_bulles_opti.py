@@ -9,7 +9,7 @@ def tri_bulle(tab):
         for en_cours in range(0, len(tab) - passage):
             comparaisons += 1
             if tab[en_cours] > tab[en_cours + 1]:
-                echanges_affections += 1
+                echanges_affections += 3
                 permutation = True
                 # On echange les deux elements
                 tab[en_cours], tab[en_cours + 1] = \

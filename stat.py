@@ -41,4 +41,4 @@ def stat(minimum: int, maximum: int, step: int, nbr: int, tri: str) -> None:
         print('Veuillez rentrer des valeurs correctes')
 
 
-stat(10, 20, 5, 10, "bulle")
+stat(10, 1000, 100, 1000, "bulle_opti")
