@@ -2,6 +2,7 @@ from random import randint
 from tri_bulles_opti import tri_bulles_opti
 from selection import selection
 from insertion import insertion
+from bulle import bulle
 
 
 def stat(minimum: int, maximum: int, step: int, nbr: int, tri: str) -> None:
@@ -22,12 +23,14 @@ def stat(minimum: int, maximum: int, step: int, nbr: int, tri: str) -> None:
                 #créer une liste par compréhension de la taille voulue
                 tableau = [randint(0, taille_tableau) for _ in range(0, taille_tableau)]
                 #choisi la bonne méthode de tri parmi les 4
-                if tri == "bulles_opti":
+                if tri == "bulle_opti":
                     total += tri_bulles_opti.tri_bulle(tableau)
                 elif tri == "selection":
                     total += selection.tri_selction(tableau)
                 elif tri == "insertion":
                     total += insertion.tri_insertion(tableau)
+                elif tri == "bulle":
+                    total += bulle.bulle(tableau)
                 else:
                     print('Tri inconnu')
                     break
@@ -38,4 +41,4 @@ def stat(minimum: int, maximum: int, step: int, nbr: int, tri: str) -> None:
         print('Veuillez rentrer des valeurs correctes')
 
 
-stat(10, 20, 5, 10, "insertion")
+stat(10, 20, 5, 10, "bulle")

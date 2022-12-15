@@ -7,6 +7,6 @@ def bulle(tab):
             if tab[j + 1] < tab[j]:
                 tab[j], tab[j+1] = tab[j+1], tab[j]
                 affectation += 3
-    return comparaison, affectation
+    return comparaison+affectation
 
 
