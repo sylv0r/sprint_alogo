@@ -1,5 +1,11 @@
 venv/
+<<<<<<< HEAD
+__pycache__/
+.DS_Store
+.idea/
+=======
 pycache/
 .DS_Store
 .idea/
 selection/__pycache__/
+>>>>>>> tri_bulles_opti
