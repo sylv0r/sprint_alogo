@@ -1,0 +1,6 @@
+tri_bulles(tableau)
+   pour i dans la taille du tableau
+       pour j allant de 0 a taille du tableau-i-1
+           si tableau[j+1] est inferieur tableau[j]
+               tableau[j+1]] = tableau[j]
+               tableau[j] = tableau[j+1]

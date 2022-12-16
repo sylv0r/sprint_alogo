@@ -1,0 +1,4 @@
+PROCEDURE tri_Insertion ( Tableau a[1:n])
+    POUR i VARIANT DE 2 A n FAIRE
+        INSERER a[i] à sa place dans a[1:i-1];
+FIN PROCEDURE;
